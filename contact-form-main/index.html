@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contact-form">
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <div class="form-item">
+          <div class="first-name">
+            <label for="first-name"
+              >First Name <span class="required-input">*</span></label
+            >
+            <input type="text" name="first-name" id="first-name" />
+            <p class="form-alert">This field is required</p>
+          </div>
+          <div class="last-name">
+            <label for="last-name"
+              >Last Name <span class="required-input">*</span></label
+            >
+            <input type="text" name="last-name" id="last-name" />
+            <p class="form-alert">This field is required</p>
+          </div>
+        </div>
+        <div class="form-item">
+          <label for="email"
+            >Email Address <span class="required-input">*</span></label
+          >
+          <input type="email" name="email" id="email" />
+          <p class="form-alert">Please enter a valid email address</p>
+        </div>
+        <div class="form-item">
+          <label for="query-type"
+            >Query Type <span class="required-input">*</span></label
+          >
+          <div class="radio-inputs">
+            <div class="radio-options">
+              <input
+                type="radio"
+                name="query-type"
+                value="General Enquiry"
+                id="general-enquiry"
+              />
+              <label for="general-enquiry">General Enquiry</label>
+            </div>
+            <div class="radio-options">
+              <input
+                type="radio"
+                name="query-type"
+                value="Support Request"
+                id="support-request"
+              />
+              <label for="support-request">Support Request</label>
+            </div>
+          </div>
+          <p class="form-alert">Please select a query type</p>
+        </div>
+        <div class="form-item">
+          <label for="message"
+            >Message <span class="required-input">*</span></label
+          >
+          <textarea name="message" rows="4" id="message"></textarea>
+          <p class="form-alert">This field is required</p>
+        </div>
+        <div class="form-item">
+          <div>
+            <input type="checkbox" name="consent" id="consent" />
+            <label for="consent"
+              >I consent to being contacted by the team
+              <span class="required-input">*</span></label
+            >
+          </div>
+          <p class="form-alert">
+            To submit this form, please consent to being contacted
+          </p>
+        </div>
+        <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
+      </form>
+    </div>
+    <div class="success-message">
+      <div class="message-header">
+        <img src="./assets/images/icon-success-check.svg" alt="" />
+        Message Sent!
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <!-- Contact Us First Name This field is required Last Name This field is
+    required Email Address Please enter a valid email address This field is
+    required Query Type General Enquiry Support Request Please select a query
+    type Message This field is required I consent to being contacted by the team
+    To submit this form, please consent to being contacted Submit Message Sent!
+    Thanks for completing the form. We'll be in touch soon! -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="main.js"></script>
+  </body>
+</html>
